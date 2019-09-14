@@ -1,16 +1,15 @@
 <link rel="stylesheet" href=
     "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="login.style.client.css">
+<link rel="stylesheet" href="register.style.client.css">
 <script src=
             "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
 </script>
 
-<script src="js/bootstrap.js"></script>
 
 <div class="container-fluid">
-  <div class="wbdv-title-login">
-    <h1>Welcome to Whiteboard!</h1>
-    <h6>A better way to manage your classes</h6>
+  <div class="wbdv-title-register">
+    <h1>Register</h1>
+    <h6>Create an account for you!</h6>
   </div>
 
   <form>
@@ -20,7 +19,7 @@
       <div class="col-sm-6">
         <input class="form-control wbdv-field wbdv-username"
                id="username"
-               placeholder="Username ">
+               placeholder="Choose an username">
       </div>
     </div>
     <div class="form-group row">
@@ -28,27 +27,26 @@
       </label>
       <div class="col-sm-6">
         <input type="password" class="form-control wbdv-field wbdv-password"
-               id="password" placeholder="Password">
+               id="password" placeholder="Create a password">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="password" class="col-sm-3 col-form-label">
+      </label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control wbdv-field wbdv-password-verify"
+               id="password verify" placeholder="Verify your password">
       </div>
     </div>
     <div class="form-group row">
       <label class="col-sm-4 col-form-label"></label>
       <div class="col-sm-4">
-        <button class="btn btn-dark btn-block wbdv-login">Sign in</button>
+        <button class="btn btn-dark btn-block wbdv-button wbdv-register">Create my account</button>
         <div class="row">
+
 
         </div>
       </div>
     </div>
   </form>
-
-  <div class="col-6 wbdv-link wbdv-forgot-password">
-    <a href="#">Forgot Password?</a>
-  </div>
-  <div class="col-6 wbdv-link wbdv-register">
-    <a href="#" class="float-right">Sign up</a>
-  </div>
 </div>
-
-
-

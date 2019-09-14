@@ -1,0 +1,29 @@
+.wbdv-title-register{
+  font-family: 'DejaVu Sans Mono', monospace;
+  text-align: center;
+}
+
+.wbdv-username {
+  background-color: skyblue;
+  border-color: dodgerblue;
+  border-width: 3px;
+
+}
+.wbdv-password {
+  background-color: lightcoral;
+  border-color: indianred;
+  border-width: 3px;
+}
+
+.wbdv-password-verify {
+  background-color: lightcoral;
+  border-color: darkred;
+  border-width: 3px;
+}
+
+.wbdv-register {
+  font-family: "Gill Sans";
+  border-color: dimgrey;
+  border-width: 3px;
+
+}
