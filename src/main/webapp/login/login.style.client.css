@@ -5,32 +5,11 @@
 }
 
 
-.wbdv-username {
-  background-color: skyblue;
-  border-color: dodgerblue;
-  border-width: 3px;
-
+.wbdv-field {
+  font-size: 12px;
 }
 
-.wbdv-password {
-  background-color: lightcoral;
-  border-color: indianred;
-  border-width: 3px;
-}
 
-.wbdv-login {
-  font-family: "Gill Sans";
-  border-color: dimgrey;
-  border-width: 3px;
 
-}
 
-.container{
-}
-.wbdv-forgot-password {
-  font-family: "Gill Sans";
 
-}
-.wbdv-register {
-  font-family: "Gill Sans";
-}

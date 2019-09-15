@@ -1,11 +1,17 @@
 <link rel="stylesheet" href=
-    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="profile.style.client.css">
-<script src=
-            "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-</script>
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href=
+    "profile.style.client.css">
 
-<script src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 <div class="container-fluid">
   <div class="wbdv-title-profile">
@@ -13,52 +19,52 @@
     <h6>Here to edit your personal information</h6>
   </div>
 
-  <div class="alert alert-success" role="alert">
+  <div class="alert alert-success wbdv-message" role="alert">
     Profile successfully saved
   </div>
 
   <form>
-    <div class="form-group row">
+    <div class="form-group row wbdv-field wbdv-username">
       <label for="username" class="col-sm-3 col-form-label">
         Username
       </label>
       <div class="col-sm-6">
 
-        <input class="form-control wbdv-field wbdv-username"
+        <input class="form-control"
                id="username"
                placeholder="cab11918" disabled>
       </div>
 
 
     </div>
-    <div class="form-group row">
+    <div class="form-group row wbdv-field wbdv-phone">
       <label for="phoneFld" class="col-sm-3 col-form-label">
         Phone
       </label>
       <div class="col-sm-6">
 
-        <input class="form-control wbdv-field wbdv-phone" type="tel"
+        <input class="form-control" type="tel"
                id="phoneFld" placeholder="(617)-123-4321">
       </div>
     </div>
-    <div class="form-group row">
+    <div class="form-group row wbdv-field wbdv-email">
       <label for="emailFld" class="col-sm-3 col-form-label" type="email">
         E-mail
       </label>
       <div class="col-sm-6">
 
-        <input class="form-control wbdv-field wbdv-email"
+        <input class="form-control"
                id="emailFld" placeholder="a.bc@husky.com">
       </div>
     </div>
 
-    <div class="form-group row">
+    <div class="form-group row wbdv-field wbdv-role">
       <label for="roleFld" class="col-sm-3 col-form-label">
         Role
       </label>
       <div class="col-sm-6">
 
-        <select class="form-control wbdv-field wbdv-role"
+        <select class="form-control"
                 id="roleFld">
           <option>Faculty</option>
           <option>Student</option>
@@ -70,12 +76,12 @@
 
     </div>
 
-    <div class="form-group row">
-      <label for="dobFld" class="col-sm-3 wbdv-field wbdv-dob">
+    <div class="form-group row wbdv-field wbdv-dob">
+      <label for="dobFld" class="col-sm-3">
         Date of Birth
       </label>
       <div class="col-sm-6">
-        <input class="form-control wbdv-field wbdv-dob" type="date" value="2019-09-14" id="dobFld">
+        <input class="form-control" type="date" value="2019-09-14" id="dobFld">
       </div>
 
 
@@ -84,20 +90,21 @@
 
   </form>
 
-  <div class="col-md-12">
-    <button class="btn btn-success btn-block wbdv-update">Update</button>
+  <div class="col-md-12 wbdv-update">
+    <button class="btn btn-success btn-block">Update</button>
   </div>
 
-  <div class="col-sm">
+  <div class="col-sm ">
 
-  </div>
-
-
-  <div class="col-md-12">
-    <button class="btn btn-danger btn-block wbdv-logout">Log Out</button>
   </div>
 
 
+  <div class="col-md-12 wbdv-logout">
+    <button class="btn btn-danger btn-block"
+            onclick="window.location.href = '/';">Log out
+    </button>
+
+  </div>
 </div>
 
 
