@@ -16,29 +16,69 @@
 <script src="https://kit.fontawesome.com/5af0749612.js"></script>
 
 
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+
+
+<!--    <button type="button" onclick="window.location.href='/'" class="close btn-dark wbdv-course-editor wbdv-close col-1"-->
+<!--            aria-label="Close">-->
+<!--        <span aria-hidden="true">&times;</span>-->
+<!--    </button>-->
+
+
+<!--    <a class="navbar-brand col-3 wbdv-course-title" href="/course-editor/course-editor.template.client.html">-->
+
+<!--        CS5550 Software Engineering Graduate-->
+
+<!--    </a>-->
+
+<!--    <a class="nav-item nav-link text-white col-8" href="#">Pages<span class="sr-only">(current)</span></a>-->
+
+<!--</nav>-->
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-
-    <button type="button" onclick="window.location.href='/'" class="close btn-dark wbdv-course-editor wbdv-close"
+    <button type="button" onclick="window.location.href='/'" class="close btn-dark"
             aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
 
-
-    <a class="navbar-brand col-10 wbdv-course-title" href="/course-editor/course-editor.template.client.html">
+    <a class="navbar-brand" href="/course-editor/course-editor.template.client.html">
 
         CS5550 Software Engineering Graduate
 
     </a>
 
 
+    <div class="collapse navbar-collapse" id="addCollapse">
+
+        <a class="nav-item nav-link text-white" href="#">Build</a>
+        <a class="nav-item nav-link active text-white wbdv-page-tab" href="#">Pages</a>
+        <a class="nav-item nav-link text-white" href="#">Theme</a>
+        <a class="nav-item nav-link text-white" href="#">Store</a>
+        <a class="nav-item nav-link text-white" href="#">Apps</a>
+        <a class="nav-item nav-link text-white" href="#">Settings</a>
+
+        <button class="btn btn-outline-danger wbdv-new-page-btn" type="submit"><i
+                class="fas fa-plus-circle wbdv-button wbdv-add-course"></i>
+        </button>
+
+
+    </div>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#addCollapse" aria-controls="addCollapse"
+            aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 </nav>
 
 
 <div class="container-fluid">
 
     <div class="row mt-3">
-        <div class="col-3  wbdv-page-tab">
+        <div class="container-fluid col-3">
             <div class="list-group wbdv-module-list" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active wbdv-module-item" id="list-module1"
                    data-toggle="list"
@@ -144,7 +184,7 @@
                 <i class="fas fa-plus-circle"></i> New Module
             </button>
         </div>
-        <div class="col-9">
+        <div class="container-fluid col-9">
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="module1" role="tabpanel" aria-labelledby="list-module1">
                     <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module1">
@@ -153,11 +193,16 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic4" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic4" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>
@@ -173,10 +218,14 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>
@@ -192,9 +241,12 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>
@@ -210,8 +262,10 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>
@@ -227,9 +281,12 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>
@@ -245,10 +302,14 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>
@@ -264,11 +325,16 @@
                             <div class="panel panel-primary">
 
                                 <div class="panel-body">
-                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="Topic4" onClick="" class="btn btn-warning wbdv-topic-pill">
-                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+                                    <input type="button" value="Topic1" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic4" onClick=""
+                                           class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick=""
+                                           class="btn btn-success wbdv-topic-add-btn">
 
                                 </div>
                             </div>

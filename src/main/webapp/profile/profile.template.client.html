@@ -1,7 +1,7 @@
 <link rel="stylesheet" href=
-    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href=
-    "profile.style.client.css">
+        "profile.style.client.css">
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -14,95 +14,95 @@
         crossorigin="anonymous"></script>
 
 <div class="container-fluid">
-  <div class="wbdv-title-profile">
-    <h1>Profile</h1>
-    <h6>Here to edit your personal information</h6>
-  </div>
-
-  <div class="alert alert-success wbdv-message" role="alert">
-    Profile successfully saved
-  </div>
-
-  <form>
-    <div class="form-group row wbdv-field wbdv-username">
-      <label for="username" class="col-sm-3 col-form-label">
-        Username
-      </label>
-      <div class="col-sm-6">
-
-        <input class="form-control"
-               id="username"
-               placeholder="cab11918" disabled>
-      </div>
-
-
-    </div>
-    <div class="form-group row wbdv-field wbdv-phone">
-      <label for="phoneFld" class="col-sm-3 col-form-label">
-        Phone
-      </label>
-      <div class="col-sm-6">
-
-        <input class="form-control" type="tel"
-               id="phoneFld" placeholder="(617)-123-4321">
-      </div>
-    </div>
-    <div class="form-group row wbdv-field wbdv-email">
-      <label for="emailFld" class="col-sm-3 col-form-label" type="email">
-        E-mail
-      </label>
-      <div class="col-sm-6">
-
-        <input class="form-control"
-               id="emailFld" placeholder="a.bc@husky.com">
-      </div>
+    <div class="wbdv-title-profile">
+        <h1>Profile</h1>
+        <h6>Here to edit your personal information</h6>
     </div>
 
-    <div class="form-group row wbdv-field wbdv-role">
-      <label for="roleFld" class="col-sm-3 col-form-label">
-        Role
-      </label>
-      <div class="col-sm-6">
-
-        <select class="form-control"
-                id="roleFld">
-          <option>Faculty</option>
-          <option>Student</option>
-          <option>Admin</option>
-        </select>
-
-      </div>
-
-
+    <div class="alert alert-success wbdv-message" role="alert">
+        Profile successfully saved
     </div>
 
-    <div class="form-group row wbdv-field wbdv-dob">
-      <label for="dobFld" class="col-sm-3">
-        Date of Birth
-      </label>
-      <div class="col-sm-6">
-        <input class="form-control" type="date" value="2019-09-14" id="dobFld">
-      </div>
+    <form>
+        <div class="form-group row wbdv-field wbdv-username">
+            <label for="username" class="col-sm-3 col-form-label">
+                Username
+            </label>
+            <div class="col-sm-6">
+
+                <input class="form-control"
+                       id="username"
+                       placeholder="cab11918" disabled>
+            </div>
 
 
+        </div>
+        <div class="form-group row wbdv-field wbdv-phone">
+            <label for="phoneFld" class="col-sm-3 col-form-label">
+                Phone
+            </label>
+            <div class="col-sm-6">
+
+                <input class="form-control" type="tel"
+                       id="phoneFld" placeholder="(617)-123-4321">
+            </div>
+        </div>
+        <div class="form-group row wbdv-field wbdv-email">
+            <label for="emailFld" class="col-sm-3 col-form-label" type="email">
+                E-mail
+            </label>
+            <div class="col-sm-6">
+
+                <input class="form-control"
+                       id="emailFld" placeholder="a.bc@husky.com">
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-field wbdv-role">
+            <label for="roleFld" class="col-sm-3 col-form-label">
+                Role
+            </label>
+            <div class="col-sm-6">
+
+                <select class="form-control"
+                        id="roleFld">
+                    <option>Faculty</option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                </select>
+
+            </div>
+
+
+        </div>
+
+        <div class="form-group row wbdv-field wbdv-dob">
+            <label for="dobFld" class="col-sm-3">
+                Date of Birth
+            </label>
+            <div class="col-sm-6">
+                <input class="form-control" type="date" value="2019-09-14" id="dobFld">
+            </div>
+
+
+        </div>
+
+
+    </form>
+
+    <div class="row">
+        <label class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-6">
+
+            <button class="btn btn-success btn-block wbdv-button wbdv-update"
+                    onclick="window.location.href = '/profile/profile.template.client.html';">Update
+            </button>
+            <button class="btn btn-danger btn-block wbdv-button wbdv-logout"
+                    onclick="window.location.href = '/';">Log Out
+            </button>
+
+        </div>
     </div>
-
-
-  </form>
-
-  <div class="row">
-    <label class="col-sm-3 col-form-label"></label>
-    <div class="col-sm-6">
-
-      <button class="btn btn-success btn-block wbdv-button wbdv-update"
-              onclick="window.location.href = '/profile/profile.template.client.html';">Update
-      </button>
-      <button class="btn btn-danger btn-block wbdv-button wbdv-logout"
-              onclick="window.location.href = '/';">Log Out
-      </button>
-
-    </div>
-  </div>
 </div>
 
 
