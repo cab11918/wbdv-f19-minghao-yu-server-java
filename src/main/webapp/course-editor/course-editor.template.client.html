@@ -1,7 +1,8 @@
 <link rel="stylesheet" href=
-    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 <link rel="stylesheet" href=
-    "course-editor.style.client.css">
+        "course-editor.style.client.css">
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -18,107 +19,269 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 
-  <button type="button" onclick="window.location.href='/'" class="close btn-light"
-          aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+    <button type="button" onclick="window.location.href='/'" class="close btn-dark wbdv-course-editor wbdv-close"
+            aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
 
 
-  <a class="navbar-brand col-10" href="/course-editor/course-editor.template.client.html">
+    <a class="navbar-brand col-10 wbdv-course-title" href="/course-editor/course-editor.template.client.html">
 
-    Course Editor
+        CS5550 Software Engineering Graduate
 
-  </a>
+    </a>
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  </div>
 </nav>
 
 
 <div class="container-fluid">
 
+    <div class="row mt-3">
+        <div class="col-3  wbdv-page-tab">
+            <div class="list-group wbdv-module-list" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active wbdv-module-item" id="list-module1"
+                   data-toggle="list"
+                   href="#module1" role="tab" aria-controls="module1">
+                    <span class="wbdv-module-item-title">
+                        Module1-JQuery
+                    </span>
 
-  <div class="row">
-    <div class="col-3">
-      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-           aria-orientation="vertical">
-        <a class="nav-link active" id="module1" data-toggle="pill" href="#v-pills-home"
-           role="tab" aria-controls="v-pills-home" aria-selected="true">Module1-jQuery
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
-        <a class="nav-link" id="module2" data-toggle="pill" href="#topics" role="tab"
-           aria-controls="v-pills-profile" aria-selected="false">Module2-React
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
-        <a class="nav-link" id="module3" data-toggle="pill" href="#topics" role="tab"
-           aria-controls="v-pills-messages" aria-selected="false">Module3-Redux
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
-        <a class="nav-link" id="module4" data-toggle="pill" href="#topics" role="tab"
-           aria-controls="v-pills-settings" aria-selected="false">Module4-Native
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
-        <a class="nav-link" id="module5" data-toggle="pill" href="#topics" role="tab"
-           aria-controls="v-pills-settings" aria-selected="false">Module5-Angular
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
-        <a class="nav-link" id="module6" data-toggle="pill" href="#topics" role="tab"
-           aria-controls="v-pills-settings" aria-selected="false">Module6-Node
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
-        <a class="nav-link" id="module7" data-toggle="pill" href="#topics" role="tab"
-           aria-controls="v-pills-settings" aria-selected="false">Module7-Mongo
-          <button type="button" onclick="window.location.href=''" class="close btn-light"
-                  aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </a>
+                    <button type="button" onclick="window.location.href=''" class="close btn-light"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
 
-      </div>
-      <button class="btn btn-success btn-block"
-              onclick="window.location.href = '';">New Module
-      </button>
 
-    </div>
-    <div class="nav nav-pills" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="topics" role="tabpanel"
-           aria-labelledby="v-pills-home-tab">
-        <div class="panel panel-primary">
+                <a class="list-group-item list-group-item-action wbdv-module-item" id="list-module2" data-toggle="list"
+                   href="#module2"
+                   role="tab" aria-controls="module2">
+                    <span class="wbdv-module-item-title">
+                        Module2-React
+                    </span>
+                    <button type="button" onclick="window.location.href=''"
+                            class="close btn-light wbdv-module-item-delete-btn"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
 
-          <div class="panel-body">
-            <input type="button" value="Topic1" onClick="" class="btn btn-warning">
-            <input type="button" value="Topic2" onClick="" class="btn btn-warning">
-            <input type="button" value="Topic3" onClick="" class="btn btn-warning">
-            <input type="button" value="Topic4" onClick="" class="btn btn-warning">
-            <input type="button" value="+" onClick="" class="btn btn-success">
+                <a class="list-group-item list-group-item-action wbdv-module-item" id="list-module3" data-toggle="list"
+                   href="#module3"
+                   role="tab" aria-controls="module3">
+                    <span class="wbdv-module-item-title">
+                        Module3-Redux
+                    </span>
+                    <button type="button" onclick="window.location.href=''"
+                            class="close btn-light wbdv-module-item-delete-btn"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
 
-          </div>
+
+                <a class="list-group-item list-group-item-action wbdv-module-item" id="list-module4" data-toggle="list"
+                   href="#module4"
+                   role="tab" aria-controls="module4">
+                    <span class="wbdv-module-item-title">
+                        Module4-Native
+                    </span>
+                    <button type="button" onclick="window.location.href=''"
+                            class="close btn-light wbdv-module-item-delete-btn"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+
+
+                <a class="list-group-item list-group-item-action wbdv-module-item" id="list-module5" data-toggle="list"
+                   href="#module5"
+                   role="tab" aria-controls="module5">
+                    <span class="wbdv-module-item-title">
+                        Module5-Angular
+                    </span>
+                    <button type="button" onclick="window.location.href=''"
+                            class="close btn-light wbdv-module-item-delete-btn"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+
+                <a class="list-group-item list-group-item-action wbdv-module-item" id="list-module6" data-toggle="list"
+                   href="#module6"
+                   role="tab" aria-controls="module6">
+                    <span class="wbdv-module-item-title">
+                        Module6-Node
+                    </span>
+
+                    <button type="button" onclick="window.location.href=''"
+                            class="close btn-light wbdv-module-item-delete-btn"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+
+
+                <a class="list-group-item list-group-item-action wbdv-module-item" id="list-module7" data-toggle="list"
+                   href="#module7"
+                   role="tab" aria-controls="module7">
+                    <span class="wbdv-module-item-title">
+                        Module7-Mongo
+                    </span>
+
+                    <button type="button" onclick="window.location.href=''"
+                            class="close btn-light wbdv-module-item-delete-btn"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+
+            </div>
+
+            <button class="btn btn-success btn-block mt-3 wbdv-module-item-add-btn"
+                    onclick="window.location.href = '';">
+                <i class="fas fa-plus-circle"></i> New Module
+            </button>
         </div>
-      </div>
+        <div class="col-9">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="module1" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module1">
+                        <div class="tab-pane fade show active" id="topics-module1" role="tabpanel"
+                             aria-labelledby="v-pills-module1-tab">
+                            <div class="panel panel-primary">
 
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic4" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="module2" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module2">
+                        <div class="tab-pane fade show active" id="topics-module2" role="tabpanel"
+                             aria-labelledby="v-pills-module2-tab">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="module3" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module3">
+                        <div class="tab-pane fade show active" id="topics-module3" role="tabpanel"
+                             aria-labelledby="v-pills-module3-tab">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="module4" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module4">
+                        <div class="tab-pane fade show active" id="topics-module4" role="tabpanel"
+                             aria-labelledby="v-pills-module4-tab">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="module5" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module5">
+                        <div class="tab-pane fade show active" id="topics-module5" role="tabpanel"
+                             aria-labelledby="v-pills-module5-tab">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="module6" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module6">
+                        <div class="tab-pane fade show active" id="topics-module6" role="tabpanel"
+                             aria-labelledby="v-pills-module6-tab">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="module7" role="tabpanel" aria-labelledby="list-module1">
+                    <div class="nav nav-pills wbdv-topic-pill-list" id="pills-module7">
+                        <div class="tab-pane fade show active" id="topics-module7" role="tabpanel"
+                             aria-labelledby="v-pills-module7-tab">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-body">
+                                    <input type="button" value="Topic1" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic2" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic3" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="Topic4" onClick="" class="btn btn-warning wbdv-topic-pill">
+                                    <input type="button" value="+" onClick="" class="btn btn-success wbdv-topic-add-btn">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
     </div>
-
-
-  </div>
 
 
 </div>
