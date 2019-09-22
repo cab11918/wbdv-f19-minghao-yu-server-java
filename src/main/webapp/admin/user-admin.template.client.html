@@ -12,10 +12,12 @@
     <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../services/user.service.client.js"></script>
+    <script src="user-admin.component.client.js"></script>
+
 </head>
 <body>
 
-<table class="table">
+<table id="table" class="table table-dark table-hover">
     <thead>
     <tr>
         <th>Username</th>
@@ -28,7 +30,7 @@
 
     <tr class="wbdv-form">
         <td><input id="usernameFld" class="form-control"
-                   placeholder="Username" value="you"/></td>
+                   placeholder="Username"/></td>
         <td><input id="passwordFld" class="form-control"
                    placeholder="Password"/></td>
         <td><input id="firstNameFld" class="form-control"
@@ -41,13 +43,13 @@
             <option value="ADMIN">Admin</option>
         </select></td>
         <td><span class="float-right" style="white-space: nowrap">
-      <i class="fa-2x fa fa-search wbdv-search"></i> <i
-                class="fa-2x fa fa-plus wbdv-create"></i> <i
-                class="fa-2x fa fa-check wbdv-update"></i>
+      <i id="wbdv-search" class="fa-2x fa fa-search wbdv-search"></i> <i
+                id="wbdv-create" class="fa-2x fa fa-plus wbdv-create"></i> <i
+                id="wbdv-update" class="fa-2x fa fa-check wbdv-update"></i>
   </span></td>
     </tr>
 
-    <tbody class="wbdv-tbody">
+    <tbody id="tbody" class="wbdv-tbody">
     <tr class="wbdv-template wbdv-user wbdv-hidden">
         <td class="wbdv-username">ada</td>
         <td>&nbsp;</td>
@@ -67,6 +69,5 @@
 
 </body>
 
-<script src="user-admin.component.client.js"></script>
 
 
