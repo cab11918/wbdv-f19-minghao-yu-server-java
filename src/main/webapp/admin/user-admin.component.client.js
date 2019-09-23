@@ -9,7 +9,7 @@
     function main() {
 
         $userRowTemplate = $('.wbdv-template');
-        $tbody = $('.wbdv-tbody');
+        $tbody = $('tbody');
         $createBtn = $('.wbdv-create');
         $createBtn.click(createUser);
 
@@ -26,6 +26,8 @@
         //     });
         // });
 
+        findAllUsers()
+
     }
 
     function createUser() {
@@ -35,12 +37,16 @@
         $lastNameFld = $("#lastNameFld").val();
         $roleFld = $("#roleFld").val();
        var user = new User($usernameFld,$passwordFld,$firstNameFld,$lastNameFld,$roleFld);
-       userService.createUser(user,"");
+       userService
+           .createUser(user)
+           .then(renderUsers);
+
 
 
     }
 
     function findAllUsers() {
+        userService.findAllUsers().then(renderUsers);
     }
 
     function findUserById() {
@@ -58,9 +64,18 @@
     }
 
     function renderUser(user) {
+
     }
 
     function renderUsers(users) {
+        $tbody.empty();
+        for(var i in users) {
+            const user = users[i];
+            const rowClone = $userRowTemplate.clone();
+            rowClone.removeClass('wbdv-hidden');
+            rowClone.find('.wbdv-username').html(user.username);
+            $tbody.append();
+        }
     }
 
 
