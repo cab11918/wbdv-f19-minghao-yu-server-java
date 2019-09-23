@@ -19,6 +19,7 @@ function AdminUserServiceClient() {
                 'content-type':'application/json'
             }
         })
+        
 
     }
     function findAllUsers(handleUsers) {
