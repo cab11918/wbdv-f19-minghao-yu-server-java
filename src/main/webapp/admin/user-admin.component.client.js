@@ -12,6 +12,8 @@
         $tbody = $('tbody');
         $createBtn = $('.wbdv-create');
         $createBtn.click(createUser);
+       userService.findAllUsers()
+           .then(renderUsers)
 
         // $(document).ready(function () {
         //     $("#wbdv-create").click(function () {
@@ -26,17 +28,17 @@
         //     });
         // });
 
-        findAllUsers()
+
 
     }
 
     function createUser() {
-        $usernameFld = $("#usernameFld").val();
-        $passwordFld = $("#passwordFld").val();
-        $firstNameFld = $("#firstNameFld").val();
-        $lastNameFld = $("#lastNameFld").val();
-        $roleFld = $("#roleFld").val();
-       var user = new User($usernameFld,$passwordFld,$firstNameFld,$lastNameFld,$roleFld);
+        var usernameFld = $("#usernameFld").val();
+        var passwordFld = $("#passwordFld").val();
+        var firstNameFld = $("#firstNameFld").val();
+        var lastNameFld = $("#lastNameFld").val();
+        var roleFld = $("#roleFld").val();
+       var user = new User(usernameFld,passwordFld,firstNameFld,lastNameFld,roleFld);
        userService
            .createUser(user)
            .then(renderUsers);
