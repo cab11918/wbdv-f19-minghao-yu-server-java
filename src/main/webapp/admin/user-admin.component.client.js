@@ -7,38 +7,34 @@
     $(main);
 
     function main() {
-        $(document).ready(function () {
-            $usernameFld = document.getElementById("usernameFld");
-            $passwordFld = document.getElementById("passwordFld");
-            $removeBtn = document.getElementById("wbdv-remove");
-            $editBtn = document.getElementById("wbdv-edit");
-            $createBtn = document.getElementById("wbdv-create");
-            $firstNameFld = document.getElementById("firstNameFld");
-            $lastNameFld = document.getElementById("lastNameFld");
-            $roleFld = document.getElementById("roleFld");
-            $tbody = document.getElementById("tbody");
 
-            $("#wbdv-create").click(function () {
-                createUser();
-            });
+        $userRowTemplate = $('.wbdv-template');
+        $tbody = $('.wbdv-tbody');
+        $createBtn = $('.wbdv-create');
+        $createBtn.click(createUser);
 
-            $("#wbdv-create").mouseenter(function () {
-                jQuery("#wbdv-create").css("color", "green");
-            });
-            $("#wbdv-create").mouseleave(function () {
-                jQuery("#wbdv-create").css("color", "white");
-            });
-        });
+        // $(document).ready(function () {
+        //     $("#wbdv-create").click(function () {
+        //         createUser();
+        //     });
+        //
+        //     $("#wbdv-create").mouseenter(function () {
+        //         jQuery("#wbdv-create").css("color", "green");
+        //     });
+        //     $("#wbdv-create").mouseleave(function () {
+        //         jQuery("#wbdv-create").css("color", "white");
+        //     });
+        // });
+
     }
 
     function createUser() {
-       var user = {
-           userName: $usernameFld,
-           passWord: $passwordFld,
-           firstName: $firstNameFld,
-           lastName: $lastNameFld,
-           role: $roleFld
-       };
+        $usernameFld = $("#usernameFld").val();
+        $passwordFld = $("#passwordFld").val();
+        $firstNameFld = $("#firstNameFld").val();
+        $lastNameFld = $("#lastNameFld").val();
+        $roleFld = $("#roleFld").val();
+       var user = new User($usernameFld,$passwordFld,$firstNameFld,$lastNameFld,$roleFld);
        userService.createUser(user,"");
 
 
@@ -51,6 +47,8 @@
     }
 
     function deleteUser() {
+        $removeBtn = $(event.currentTarget)
+        const id = $removeBtn.attr('id')
     }
 
     function selectUser() {

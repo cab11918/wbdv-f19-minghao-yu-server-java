@@ -1,12 +1,9 @@
-function User(username, password, firstName, lastName, email, phone, role, dateOfBirth) {
+function User(username, password, firstName, lastName, role) {
     this.username = username;
     this.passWord = password;
     this.firstName = firstName;
     this.lastName = lastName;
-    this.email = email;
-    this.phone = phone;
     this.role = role;
-    this.dateOfBirth = dateOfBirth;
 
     this.setUsername = setUsername;
     this.getUsername = getUsername;

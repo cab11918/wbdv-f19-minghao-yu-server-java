@@ -11,11 +11,22 @@ function AdminUserServiceClient() {
 
 
     function createUser(user, callback) {
-        userList.push(user);
-        alert(userList.length);
+        console.log(user)
+        fetch('https://wbdv-generic-server.herokuapp.com/api/001248197/users', {
+            method:'POST',
+            body: JSON.stringify(user),
+            headers: {
+                'content-type':'application/json'
+            }
+        })
+
     }
-    function findAllUsers(callback) {  }
+    function findAllUsers(handleUsers) {
+
+    }
     function findUserById(userId, callback) {  }
     function updateUser(userId, user, callback) {  }
-    function deleteUser(userId, callback) {  }
+    function deleteUser(userId, callback) {
+
+    }
 }
