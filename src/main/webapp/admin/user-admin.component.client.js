@@ -8,12 +8,25 @@
 
     function main() {
 
-        $userRowTemplate = $('.wbdv-template');
-        $tbody = $('tbody');
+        $usernameFld = $("#usernameFld");
+        $passwordFld = $("#passwordFld");
+        $firstNameFld = $("#firstNameFld");
+        $lastNameFld = $('#lastNameFld');
+        $roleFld = $("#roleFld");
+        $removeBtn = $('.wbdv-remove');
         $createBtn = $('.wbdv-create');
+
+        $userRowTemplate = $('.wbdv-template');
+        $tbody = $('#tbody');
+
+
         $createBtn.click(createUser);
-       userService.findAllUsers()
-           .then(renderUsers)
+
+
+        $removeBtn.click(deleteUser);
+
+        findAllUsers()
+
 
         // $(document).ready(function () {
         //     $("#wbdv-create").click(function () {
@@ -29,20 +42,19 @@
         // });
 
 
-
     }
 
     function createUser() {
-        var usernameFld = $("#usernameFld").val();
-        var passwordFld = $("#passwordFld").val();
-        var firstNameFld = $("#firstNameFld").val();
-        var lastNameFld = $("#lastNameFld").val();
-        var roleFld = $("#roleFld").val();
-       var user = new User(usernameFld,passwordFld,firstNameFld,lastNameFld,roleFld);
-       userService
-           .createUser(user)
-           .then(renderUsers);
+        var username = $usernameFld.val();
+        var password = $passwordFld.val();
+        var firstName = $firstNameFld.val();
+        var lastName = $lastNameFld.val();
+        var role = $roleFld.val();
 
+        var user = {username, password, firstName, lastName, role};
+
+        userService
+            .createUser(user).then(findAllUsers);
 
 
     }
@@ -55,8 +67,11 @@
     }
 
     function deleteUser() {
-        $removeBtn = $(event.currentTarget)
-        const id = $removeBtn.attr('id')
+
+        userId = event.target.id
+        userService.deleteUser(userId).then(findAllUsers)
+
+
     }
 
     function selectUser() {
@@ -71,13 +86,24 @@
 
     function renderUsers(users) {
         $tbody.empty();
-        for(var i in users) {
+        for (var i in users) {
             const user = users[i];
             const rowClone = $userRowTemplate.clone();
             rowClone.removeClass('wbdv-hidden');
             rowClone.find('.wbdv-username').html(user.username);
-            $tbody.append();
+            rowClone.find('.wbdv-password').html(user.passWord);
+            rowClone.find('.wbdv-first-name').html(user.firstName);
+            rowClone.find('.wbdv-last-name').html(user.lastName);
+            rowClone.find('.wbdv-role').html(user.role);
+            rowClone.find(".wbdv-remove").attr('id', user.id)
+            $tbody.append(rowClone);
         }
+
+
+        $(".wbdv-remove").click(function () {
+            deleteUser();
+        });
+
     }
 
 

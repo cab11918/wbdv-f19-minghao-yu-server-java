@@ -1,6 +1,6 @@
 function User(username, password, firstName, lastName, role) {
     this.username = username;
-    this.passWord = password;
+    this.password = password;
     this.firstName = firstName;
     this.lastName = lastName;
     this.role = role;
@@ -36,7 +36,7 @@ function User(username, password, firstName, lastName, role) {
     }
 
     function getPassword() {
-        return this.passWord;
+        return this.password;
     }
 
     function setFirstName(firstName) {
