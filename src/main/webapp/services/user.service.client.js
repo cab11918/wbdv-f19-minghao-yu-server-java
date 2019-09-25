@@ -6,7 +6,6 @@ function AdminUserServiceClient() {
     this.updateUser = updateUser;
 
 
-
     function createUser(user) {
         return fetch('https://wbdv-generic-server.herokuapp.com/api/001248197/users', {
             method: 'POST',
@@ -47,10 +46,6 @@ function AdminUserServiceClient() {
             },
             body: JSON.stringify(user)
         })
-
-
-
-
 
 
     }

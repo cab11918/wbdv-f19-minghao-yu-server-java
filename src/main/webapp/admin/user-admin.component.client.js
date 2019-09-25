@@ -34,44 +34,30 @@
         $updateBtn.click(updateUser);
 
 
-
-
         findAllUsers()
-
-
-        // $(document).ready(function () {
-        //     $("#wbdv-create").click(function () {
-        //         createUser();
-        //     });
-        //
-        //     $("#wbdv-create").mouseenter(function () {
-        //         jQuery("#wbdv-create").css("color", "green");
-        //     });
-        //     $("#wbdv-create").mouseleave(function () {
-        //         jQuery("#wbdv-create").css("color", "white");
-        //     });
-        // });
 
 
     }
 
     function createUser() {
-        var username = $usernameFld.val();
-        var password = $passwordFld.val();
-        var firstName = $firstNameFld.val();
-        var lastName = $lastNameFld.val();
-        var role = $roleFld.val();
 
-        var user = new User(username, password, firstName, lastName, role);
+        if ($usernameFld.val() == '' || $passwordFld.val() == '' || $firstNameFld.val() == '' || $lastNameFld.val() == '') {
+            alert("Please fill the form correctly!")
+        } else {
+            var username = $usernameFld.val();
+            var password = $passwordFld.val();
+            var firstName = $firstNameFld.val();
+            var lastName = $lastNameFld.val();
+            var role = $roleFld.val();
 
-        userService
-            .createUser(user).then(findAllUsers);
+            var user = new User(username, password, firstName, lastName, role);
 
-        $usernameFld.val('')
-        $passwordFld.val('')
-        $firstNameFld.val('')
-        $lastNameFld.val('')
-        $roleFld.val('FACULTY')
+            userService
+                .createUser(user).then(findAllUsers);
+
+            clear();
+
+        }
 
 
     }
@@ -92,8 +78,6 @@
 
     }
 
-    // function selectUser() {
-    // }
 
     function updateUser() {
         var username = $usernameFld.val();
@@ -101,16 +85,17 @@
         var firstName = $firstNameFld.val();
         var lastName = $lastNameFld.val();
         var role = $roleFld.val();
-        var updateUser = new User(username,password,firstName,lastName,role);
-         renderUser(updateUser);
+        var updateUser = new User(username, password, firstName, lastName, role);
+        renderUser(updateUser);
 
 
+        clear();
 
 
     }
 
     function renderUser(updateUser) {
-        userService.updateUser(userId,updateUser).then(findAllUsers)
+        userService.updateUser(userId, updateUser).then(findAllUsers)
 
     }
 
@@ -145,17 +130,28 @@
     function selectUser() {
         userId = event.target.id
 
-     findUserById()
+        findUserById()
 
 
     }
 
+    // grab the fields selected and put them up onto the fields of form
     function grabUp(user) {
         $usernameFld.val(user.username)
         $passwordFld.val(user.password)
         $firstNameFld.val(user.firstName)
         $lastNameFld.val(user.lastName)
         $roleFld.val(user.role)
+    }
+
+    // clean up the fields of form after action completed
+    function clear() {
+
+        $usernameFld.val('')
+        $passwordFld.val('')
+        $firstNameFld.val('')
+        $lastNameFld.val('')
+        $roleFld.val('FACULTY')
     }
 
 
