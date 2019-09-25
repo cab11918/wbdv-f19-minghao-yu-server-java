@@ -3,6 +3,7 @@
     var $removeBtn, $editBtn, $createBtn;
     var $firstNameFld, $lastNameFld;
     var $userRowTemplate, $tbody;
+    var $updateBtn;
     var userService = new AdminUserServiceClient(), $roleFld;
     $(main);
 
@@ -15,6 +16,8 @@
         $roleFld = $("#roleFld");
         $removeBtn = $('.wbdv-remove');
         $createBtn = $('.wbdv-create');
+        $editBtn = $('.wbdv-edit');
+        $updateBtn = $('.wbdv-update');
 
         $userRowTemplate = $('.wbdv-template');
         $tbody = $('#tbody');
@@ -24,6 +27,12 @@
 
 
         $removeBtn.click(deleteUser);
+
+        $editBtn.click(selectUser);
+
+        $updateBtn.click(updateUser);
+
+
 
         findAllUsers()
 
@@ -56,6 +65,12 @@
         userService
             .createUser(user).then(findAllUsers);
 
+        $usernameFld.val('')
+        $passwordFld.val('')
+        $firstNameFld.val('')
+        $lastNameFld.val('')
+        $roleFld.val('FACULTY')
+
 
     }
 
@@ -64,6 +79,7 @@
     }
 
     function findUserById() {
+        userService.findUserById(userId).then(grabUp)
     }
 
     function deleteUser() {
@@ -74,10 +90,14 @@
 
     }
 
-    function selectUser() {
-    }
+    // function selectUser() {
+    // }
 
     function updateUser() {
+        userId = event.target.id
+
+        alert(userId)
+
     }
 
     function renderUser(user) {
@@ -96,6 +116,8 @@
             rowClone.find('.wbdv-last-name').html(user.lastName);
             rowClone.find('.wbdv-role').html(user.role);
             rowClone.find(".wbdv-remove").attr('id', user.id)
+            rowClone.find(".wbdv-edit").attr('id', user.id)
+            rowClone.find(".wbdv-update").attr('id', user.id)
             $tbody.append(rowClone);
         }
 
@@ -104,6 +126,26 @@
             deleteUser();
         });
 
+        $(".wbdv-edit").click(function () {
+            selectUser();
+        });
+
+    }
+
+    function selectUser() {
+        userId = event.target.id
+
+     findUserById()
+
+
+    }
+
+    function grabUp(user) {
+        $usernameFld.val(user.username)
+        $passwordFld.val(user.password)
+        $firstNameFld.val(user.firstName)
+        $lastNameFld.val(user.lastName)
+        $roleFld.val(user.role)
     }
 
 

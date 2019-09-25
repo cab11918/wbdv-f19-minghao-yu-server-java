@@ -27,10 +27,22 @@ function AdminUserServiceClient() {
             })
     }
 
-    function findUserById(userId, callback) {
+    function findUserById(userId) {
+
+
+        return fetch('https://wbdv-generic-server.herokuapp.com/api/001248197/users/' + userId, {
+            method: 'GET',
+
+        }).then(function (response) {
+            return response.json();
+        })
+
+
     }
 
-    function updateUser(userId, user, callback) {
+    function updateUser(userId, user) {
+
+
     }
 
     function deleteUser(userId) {
