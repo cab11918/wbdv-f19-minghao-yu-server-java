@@ -5,6 +5,7 @@
     var $userRowTemplate, $tbody;
     var $updateBtn;
     var userService = new AdminUserServiceClient(), $roleFld;
+    var userId;
     $(main);
 
     function main() {
@@ -34,6 +35,7 @@
 
 
 
+
         findAllUsers()
 
 
@@ -60,7 +62,7 @@
         var lastName = $lastNameFld.val();
         var role = $roleFld.val();
 
-        var user = {username, password, firstName, lastName, role};
+        var user = new User(username, password, firstName, lastName, role);
 
         userService
             .createUser(user).then(findAllUsers);
@@ -94,13 +96,21 @@
     // }
 
     function updateUser() {
-        userId = event.target.id
+        var username = $usernameFld.val();
+        var password = $passwordFld.val();
+        var firstName = $firstNameFld.val();
+        var lastName = $lastNameFld.val();
+        var role = $roleFld.val();
+        var updateUser = new User(username,password,firstName,lastName,role);
+         renderUser(updateUser);
 
-        alert(userId)
+
+
 
     }
 
-    function renderUser(user) {
+    function renderUser(updateUser) {
+        userService.updateUser(userId,updateUser).then(findAllUsers)
 
     }
 

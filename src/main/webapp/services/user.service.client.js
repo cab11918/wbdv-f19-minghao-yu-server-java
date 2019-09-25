@@ -4,9 +4,7 @@ function AdminUserServiceClient() {
     this.findUserById = findUserById;
     this.deleteUser = deleteUser;
     this.updateUser = updateUser;
-    var self = this;
 
-    var userList = new Array();
 
 
     function createUser(user) {
@@ -41,6 +39,18 @@ function AdminUserServiceClient() {
     }
 
     function updateUser(userId, user) {
+        return fetch('https://wbdv-generic-server.herokuapp.com/api/001248197/users/' + userId, {
+            method: 'PUT',
+
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+
+
+
+
 
 
     }
