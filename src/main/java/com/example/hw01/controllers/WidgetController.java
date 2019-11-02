@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WidgetController {
 
-  List<Widget> widgets = new WidgetService().getInstance();
+  WidgetService service = new WidgetService();
+
+  List<Widget> widgets = service.getWidgets();
 
 
 

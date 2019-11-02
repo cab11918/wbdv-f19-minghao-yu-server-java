@@ -23,9 +23,10 @@ public WidgetService() {
 
 }
 
-public List<Widget> getInstance(){
+public List<Widget> getWidgets() {
   return this.widgets;
-  }
+}
+
 
 
 
