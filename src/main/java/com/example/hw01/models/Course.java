@@ -6,6 +6,13 @@ public class Course {
 
   private Integer id;
   private String title;
-  private List<Module> modules;
 
+  public Integer getId() {
+    return id;
+  }
+
+  public Course(Integer id, String title) {
+    this.id = id;
+    this.title = title;
+  }
 }

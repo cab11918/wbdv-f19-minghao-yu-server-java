@@ -4,6 +4,7 @@
     <list default="true" id="5834a896-c686-446a-98f7-04de8054af32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,13 +40,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/CourseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#1881#1882#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding>
+                <element signature="e#172#173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="22" selection-start-line="8" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#798#799#0" expanded="true" />
@@ -82,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>book</find>
       <find>wbdv-field wbdv-phone</find>
       <find>wbdv-field wbdv-email</find>
       <find>wbdv-field wbdv-dob</find>
@@ -112,6 +152,7 @@
       <find>renderuser</find>
       <find>delete</find>
       <find>icon</find>
+      <find>widget</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,7 +181,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/DemoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/SpringBootApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/CourseController.java" />
       </list>
     </option>
   </component>
@@ -157,7 +201,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="246" />
     <option name="y" value="23" />
     <option name="width" value="1194" />
@@ -171,17 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="hw01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/hw01" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,6 +265,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hw01" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="hw01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/hw01" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -340,19 +384,20 @@
       <workItem from="1572664657075" duration="14000" />
       <workItem from="1572664672821" duration="2163000" />
       <workItem from="1572730633999" duration="130000" />
-      <workItem from="1572730818254" duration="24000" />
+      <workItem from="1572730818254" duration="50000" />
+      <workItem from="1572731037170" duration="973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161136000" />
+    <option name="totallyTimeSpent" value="162135000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="23" width="1194" height="831" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22569445" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18597998" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -409,7 +454,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/register/register.template.client.html" />
     <entry file="file://$PROJECT_DIR$/../Desktop/DemoApplication.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Module.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java" />
@@ -433,10 +477,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#798#799#0" expanded="true" />
@@ -445,15 +492,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
           </folding>
         </state>
       </provider>

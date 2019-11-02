@@ -2,8 +2,6 @@ package com.example.hw01.controllers;
 
 import com.example.hw01.WidgetService;
 import com.example.hw01.models.Widget;
-import com.example.hw01.models.Widget.type;
-import java.util.ArrayList;
 import java.util.List;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
