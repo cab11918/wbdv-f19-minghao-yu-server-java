@@ -1,7 +1,4 @@
 package com.example.hw01.models;
-
-import java.util.List;
-
 public class Course {
 
   private Integer id;
@@ -9,6 +6,10 @@ public class Course {
 
   public Integer getId() {
     return id;
+  }
+
+  public String getTitle() {
+    return this.title;
   }
 
   public Course(Integer id, String title) {
