@@ -5,6 +5,7 @@ import com.example.hw01.models.Widget;
 import com.example.hw01.models.Widget.type;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins="https://tranquil-hamlet-37825.herokuapp.com",allowCredentials="true",allowedHeaders="*")
 @RestController
 public class WidgetController {
 
