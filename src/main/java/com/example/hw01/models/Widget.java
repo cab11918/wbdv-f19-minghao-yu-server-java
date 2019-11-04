@@ -12,7 +12,7 @@ public class Widget {
   }
 
 
-  private int widgetType;
+  private String widgetType;
   private int order;
   private String text;
   private String src;
@@ -27,36 +27,36 @@ public class Widget {
     this.text = text;
     this.src = src;
     this.size = size;
-    this.widgetType = -1;
+    this.widgetType = "UNKNOWN";
 
     switch (type) {
       case HEADING:
-        this.widgetType = 0;
+        this.widgetType = "HEADING";
         break;
       case LIST:
-        this.widgetType = 1;
+        this.widgetType = "LIST";
         break;
       case PARAGRAPH:
-        this.widgetType = 2;
+        this.widgetType = "PARAGRAPH";
         break;
       case IMAGE:
-        this.widgetType = 3;
+        this.widgetType = "IMAGE";
         break;
       case LINK:
-        this.widgetType = 4;
+        this.widgetType = "LINK";
         break;
       default:
-        this.widgetType = -1;
+        this.widgetType = "UNKNOWN";
 
     }
   }
 
 
-  public void setWidgetType(int widgetType) {
+  public void setWidgetType(String widgetType) {
     this.widgetType = widgetType;
   }
 
-  public int getWidgetType() {
+  public String getWidgetType() {
     return widgetType;
   }
 
