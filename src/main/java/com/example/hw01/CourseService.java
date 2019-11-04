@@ -1,30 +1,44 @@
 package com.example.hw01;
 
 import com.example.hw01.models.Course;
+import com.example.hw01.models.Lesson;
+import com.example.hw01.models.Topic;
+import com.example.hw01.models.Widget;
+import com.example.hw01.models.Module;
+import com.example.hw01.models.Widget.type;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CourseService {
+
   List<Course> courses = new ArrayList<>();
 
   public CourseService() {
 
-  Course c1 = new Course(123,"course 1");
-  Course c2 = new Course(234,"course 2");
-  Course c3 = new Course(345,"course 3");
-  Course c4 = new Course(456,"course 4");
-  Course c5 = new Course(567,"course 5");
+    Widget w1 = new Widget(123, "widget1", 0, "text1", "source1", 1, type.HEADING);
+    List<Widget> lw = new ArrayList<>();
+    lw.add(w1);
 
+    Topic t1 = new Topic(234, "Topic1", lw);
+    List<Topic> lt = new ArrayList<>();
+    lt.add(t1);
 
-  courses.add(c1);
-  courses.add(c2);
-  courses.add(c3);
-  courses.add(c4);
-  courses.add(c5);
-}
+    Lesson l1 = new Lesson(345, "Lesson 1", lt);
+    List<Lesson> ll = new ArrayList<>();
+    ll.add(l1);
 
-public List<Course> getCourses() {
-  return this.courses;
-}
+    Module m1 = new Module(456, "Lesson 1", ll);
+    List<Module> lm = new ArrayList<>();
+    lm.add(m1);
+
+    Course c1 = new Course(567, "Course 1", lm);
+
+    courses.add(c1);
+
+  }
+
+  public List<Course> getCourses() {
+    return this.courses;
+  }
 
 }
