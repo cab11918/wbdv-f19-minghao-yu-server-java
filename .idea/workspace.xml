@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5834a896-c686-446a-98f7-04de8054af32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="600">
+              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -39,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="405">
               <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,14 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -114,12 +112,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+            <state relative-caret-position="435">
+              <caret line="31" selection-start-line="31" selection-end-line="49" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,15 +195,15 @@
         <option value="$PROJECT_DIR$/src/main/webapp/course-editor/course-editor.template.client.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/DemoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/SpringBootApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/CourseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Module.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java" />
       </list>
     </option>
   </component>
@@ -238,6 +234,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="hw01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/hw01" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,18 +308,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="hw01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/hw01" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,18 +419,20 @@
       <workItem from="1572814797784" duration="58000" />
       <workItem from="1572897551708" duration="1737000" />
       <workItem from="1572900130778" duration="165000" />
+      <workItem from="1572903717694" duration="2571000" />
+      <workItem from="1572917905093" duration="536000" />
+      <workItem from="1572918771401" duration="280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165920000" />
+    <option name="totallyTimeSpent" value="169307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="246" y="23" width="1194" height="831" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1953125" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1953125" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -507,10 +505,27 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/CourseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -557,45 +572,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/WidgetService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+        <state relative-caret-position="435">
+          <caret line="31" selection-start-line="31" selection-end-line="49" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/CourseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
