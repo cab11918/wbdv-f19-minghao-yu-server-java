@@ -1,9 +1,12 @@
+com/example/hw01/models/Module.class
+com/example/hw01/WidgetService.class
+com/example/hw01/models/Widget$type.class
+com/example/hw01/models/Course.class
+com/example/hw01/models/Topic.class
 com/example/hw01/controllers/CourseController.class
 com/example/hw01/models/Widget.class
 com/example/hw01/CourseService.class
 com/example/hw01/controllers/WidgetController.class
 com/example/hw01/models/Widget$1.class
-com/example/hw01/WidgetService.class
-com/example/hw01/models/Widget$type.class
 com/example/hw01/DemoApplication.class
-com/example/hw01/models/Course.class
+com/example/hw01/models/Lesson.class
