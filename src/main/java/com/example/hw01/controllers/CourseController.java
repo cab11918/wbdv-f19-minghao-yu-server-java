@@ -1,6 +1,6 @@
 package com.example.hw01.controllers;
 
-import com.example.hw01.CourseService;
+import com.example.hw01.services.CourseService;
 import com.example.hw01.models.Course;
 import java.util.List;
 import org.springframework.web.bind.annotation.CrossOrigin;

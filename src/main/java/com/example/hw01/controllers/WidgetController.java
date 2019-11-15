@@ -1,8 +1,10 @@
 package com.example.hw01.controllers;
 
-import com.example.hw01.WidgetService;
+import com.example.hw01.repositories.WidgetRepository;
+import com.example.hw01.services.WidgetService;
 import com.example.hw01.models.Widget;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
     allowedHeaders = "*")
 @RestController
 public class WidgetController {
+  @Autowired
+  WidgetRepository repository;
+
 
   WidgetService service = new WidgetService();
 
@@ -61,7 +66,8 @@ public class WidgetController {
 
   @GetMapping("/api/widgets")
   public List<Widget> findAllWidgets() {
-    return widgets;
+    return (List<Widget>)repository.findAll();
+//    return widgets;
   }
 
   @GetMapping("/api/widgets/{widgetId}")
