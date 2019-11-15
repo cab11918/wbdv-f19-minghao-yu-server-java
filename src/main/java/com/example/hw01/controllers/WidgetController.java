@@ -32,8 +32,7 @@ public class WidgetController {
   @PostMapping("/api/widgets")
   public List<Widget> createWidget(
       @RequestBody Widget widget) {
-    widgets.add(widget);
-    return widgets;
+    return (List<Widget>)repository.save(widget);
   }
 
   @PutMapping("/api/widgets/{widgetId}")
