@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5834a896-c686-446a-98f7-04de8054af32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" afterDir="false" />
-    </list>
+    <list default="true" id="5834a896-c686-446a-98f7-04de8054af32" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -534,12 +531,12 @@
       <workItem from="1573754674099" duration="7747000" />
       <workItem from="1573850825291" duration="178000" />
       <workItem from="1573851346545" duration="648000" />
-      <workItem from="1573852985087" duration="69000" />
+      <workItem from="1573852985087" duration="368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196888000" />
+    <option name="totallyTimeSpent" value="197187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="126" y="23" width="1194" height="831" extended-state="0" />
