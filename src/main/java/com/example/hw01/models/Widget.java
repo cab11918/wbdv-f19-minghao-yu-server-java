@@ -120,5 +120,14 @@ public class Widget {
     return size;
   }
 
+  public void set(Widget newWidget) {
+    this.id = newWidget.id;
+    this.title = newWidget.title;
+    this.text = newWidget.text;
+    this.src = newWidget.src;
+    this.size = newWidget.size;
+    this.widgetType = newWidget.widgetType;
+  }
+
 
 }

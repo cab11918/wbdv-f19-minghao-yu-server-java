@@ -36,31 +36,20 @@ public class WidgetController {
   }
 
   @PutMapping("/api/widgets/{widgetId}")
-  public List<Widget> updateWidget(
+  public Widget updateWidget(
       @PathVariable("widgetId") int widgetId,
       @RequestBody Widget newWidget
   ) {
-    for (int i = 0; i < widgets.size(); i++) {
-      if (widgets.get(i).getId() == widgetId) {
-        widgets.set(i, newWidget);
-      }
-    }
-    return widgets;
+   Widget w = repository.findById(widgetId).get();
+   w.set(newWidget);
+  return repository.save(w);
   }
 
 
   @DeleteMapping("/api/widgets/{widgetId}")
-  public List<Widget> deleteWidget(
+  public void deleteWidget(
       @PathVariable("widgetId") int id) {
-    int index = -1;
-
-    for (int i = 0; i < widgets.size(); i++) {
-      if (widgets.get(i).getId() == id) {
-        index = i;
-      }
-    }
-    widgets.remove(index);
-    return widgets;
+    repository.deleteById(id);
 
   }
 
@@ -86,4 +75,8 @@ public class WidgetController {
   }
 
 
+
 }
+
+
+

@@ -43,13 +43,13 @@ public class WidgetService {
     return new WidgetController().findWidgetById(id);
   }
 
-  public List<Widget> updateWidget(int id, Widget w) {
-    return new WidgetController().updateWidget(id, w);
-  }
-
-  public List<Widget> deleteWidget(int id) {
-    return new WidgetController().deleteWidget(id);
-  }
+//  public List<Widget> updateWidget(int id, Widget w) {
+//    return new WidgetController().updateWidget(id, w);
+//  }
+//
+//  public List<Widget> deleteWidget(int id) {
+//    return new WidgetController().deleteWidget(id);
+//  }
 
 
 }
