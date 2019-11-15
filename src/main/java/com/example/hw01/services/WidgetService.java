@@ -17,6 +17,8 @@ public class WidgetService {
     Widget w4 = new Widget(456, "widget4", 3, "text4", "source4", 1, type.IMAGE);
     Widget w5 = new Widget(567, "widget5", 4, "text5", "source5", 1, type.LINK);
 
+
+
     widgets.add(w1);
     widgets.add(w2);
     widgets.add(w3);

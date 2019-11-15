@@ -4,6 +4,7 @@ import com.example.hw01.repositories.WidgetRepository;
 import com.example.hw01.services.WidgetService;
 import com.example.hw01.models.Widget;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -73,11 +74,15 @@ public class WidgetController {
   @GetMapping("/api/widgets/{widgetId}")
   public Widget findWidgetById(
       @PathVariable("widgetId") int id) {
-    for (Widget w : widgets) {
-      if (w.getId() == id) {
-        return w;
-      }
-    }
+  Optional<Widget> w = repository.findById(id);
+  if(w.isPresent()) {
+    return w.get();
+  }
+//    for (Widget w : widgets) {
+//      if (w.getId() == id) {
+//        return w;
+//      }
+//    }
     return null;
   }
 

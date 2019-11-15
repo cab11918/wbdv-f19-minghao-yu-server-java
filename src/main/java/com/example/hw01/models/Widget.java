@@ -7,12 +7,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="widgets")
+@Table(name = "widgets")
 public class Widget {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
-  private String name;
+  private String title;
 
 
   public enum type {
@@ -21,17 +22,18 @@ public class Widget {
 
 
   private String widgetType;
-  private int order;
+//  private int order;
   private String text;
   private String src;
   private int size;
 
-
-  public Widget(int id, String name, int order, String text, String src,
+  public Widget() {
+  }
+  public Widget(int id, String title, int order, String text, String src,
       int size, type type) {
     this.id = id;
-    this.name = name;
-    this.order = order;
+    this.title = title;
+//    this.order = order;
     this.text = text;
     this.src = src;
     this.size = size;
@@ -60,6 +62,8 @@ public class Widget {
   }
 
 
+
+
   public void setWidgetType(String widgetType) {
     this.widgetType = widgetType;
   }
@@ -72,13 +76,13 @@ public class Widget {
     this.id = id;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setTitle(String name) {
+    this.title = name;
   }
 
-  public void setOrder(int order) {
-    this.order = order;
-  }
+//  public void setOrder(int order) {
+//    this.order = order;
+//  }
 
   public void setText(String text) {
     this.text = text;
@@ -96,13 +100,13 @@ public class Widget {
     return id;
   }
 
-  public String getName() {
-    return name;
+  public String getTitle() {
+    return title;
   }
 
-  public int getOrder() {
-    return order;
-  }
+//  public int getOrder() {
+//    return order;
+//  }
 
   public String getText() {
     return text;
