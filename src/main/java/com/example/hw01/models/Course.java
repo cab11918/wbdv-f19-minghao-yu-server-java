@@ -1,6 +1,7 @@
 
 package com.example.hw01.models;
 
+import java.util.ArrayList;
 import javax.persistence.*;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class Course {
   private Integer id;
   private String title;
   @OneToMany(mappedBy = "course")
-  private List<Module> modules;
+  private List<Module> modules = new ArrayList<>();
 
   public Course() {
   }
