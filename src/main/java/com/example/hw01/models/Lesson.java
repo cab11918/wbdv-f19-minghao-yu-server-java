@@ -1,43 +1,44 @@
 package com.example.hw01.models;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="lessons")
 public class Lesson {
-
-  private int id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Integer id;
   private String title;
+  @ManyToOne
+  @JsonIgnore
+  private Module module;
 
-  public void setId(int id) {
-    this.id = id;
+  public Lesson() {
   }
 
-  public void setTitle(String title) {
-    this.title = title;
+  public Module getModule() {
+    return module;
   }
 
-  public void setTopics(List<Topic> topics) {
-    this.topics = topics;
+  public void setModule(Module module) {
+    this.module = module;
   }
 
-  public int getId() {
+  public Integer getId() {
     return id;
+  }
+
+  public void setId(Integer id) {
+    this.id = id;
   }
 
   public String getTitle() {
     return title;
   }
 
-  public List<Topic> getTopics() {
-    return topics;
-  }
-
-  public Lesson(int id, String title, List<Topic> topics) {
-    this.id = id;
+  public void setTitle(String title) {
     this.title = title;
-    this.topics = topics;
   }
-
-  private List<Topic> topics;
-
-
 }

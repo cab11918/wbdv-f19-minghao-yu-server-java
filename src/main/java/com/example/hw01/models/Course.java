@@ -1,13 +1,30 @@
+
 package com.example.hw01.models;
 
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "courses")
 public class Course {
 
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
   private String title;
+  @OneToMany(mappedBy = "course")
   private List<Module> modules;
 
+  public Course() {
+  }
+
+  public List<Module> getModules() {
+    return modules;
+  }
+
+  public void setModules(List<Module> modules) {
+    this.modules = modules;
+  }
 
   public Integer getId() {
     return id;
@@ -17,26 +34,18 @@ public class Course {
     this.id = id;
   }
 
+  public String getTitle() {
+    return title;
+  }
+
   public void setTitle(String title) {
     this.title = title;
   }
 
-  public void setModules(List<Module> modules) {
-    this.modules = modules;
-  }
-
-  public List<Module> getModules() {
-    return modules;
-  }
-
-  public String getTitle() {
-    return this.title;
-  }
-
-  public Course(Integer id, String title, List<Module> modules) {
-    this.id = id;
-    this.title = title;
-    this.modules = modules;
+  public void set(Course newCourse) {
+    this.id = newCourse.id;
+    this.title = newCourse.title;
+    // modules?
 
   }
 }

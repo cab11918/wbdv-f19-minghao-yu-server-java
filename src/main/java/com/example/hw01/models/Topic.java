@@ -8,6 +8,9 @@ public class Topic {
   private String title;
   private List<Widget> widgets;
 
+  public Topic() {
+  }
+
   public void setId(int id) {
     this.id = id;
   }

@@ -26,7 +26,7 @@ public class WidgetController {
 
   WidgetService service = new WidgetService();
 
-  List<Widget> widgets = service.getWidgets();
+//  List<Widget> widgets = service.getWidgets();
 
 
   @PostMapping("/api/widgets")

@@ -1,8 +1,11 @@
 package com.example.hw01.controllers;
 
+import com.example.hw01.repositories.CourseRepository;
 import com.example.hw01.services.CourseService;
 import com.example.hw01.models.Course;
 import java.util.List;
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,59 +21,55 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CourseController {
 
-  CourseService service = new CourseService();
+  @Autowired
+  CourseRepository repository;
 
-  List<Course> courses = service.getCourses();
+//  CourseService service = new CourseService();
+
+//  List<Course> courses = service.getCourses();
 
 
   @PostMapping("/api/courses")
-  public List<Course> createCourse(
+  public Course createCourse(
       @RequestBody Course course) {
-    courses.add(course);
-    return courses;
+
+    return repository.save(course);
   }
 
+
   @PutMapping("/api/courses/{cid}")
-  public List<Course> updateCourse(
+  public Course updateCourse(
       @PathVariable("cid") int cid,
       @RequestBody Course course
   ) {
-    for (int i = 0; i < courses.size(); i++) {
-      if (courses.get(i).getId() == cid) {
-        courses.set(i, course);
-      }
-    }
-    return courses;
+    Course c = repository.findById(cid).get();
+    c.set(course);
+    return repository.save(c);
   }
 
 
   @DeleteMapping("/api/courses/{cid}")
-  public List<Course> deleteCourse(
+  public void deleteCourse(
       @PathVariable("cid") int cid) {
-    int index = -1;
 
-    for (int i = 0; i < courses.size(); i++) {
-      if (courses.get(i).getId() == cid) {
-        index = i;
-      }
-    }
-    courses.remove(index);
-    return courses;
+    repository.deleteById(cid);
+
 
   }
+
 
   @GetMapping("/api/courses")
   public List<Course> findAllCourses() {
-    return courses;
+    return (List<Course>) repository.findAll();
   }
+
 
   @GetMapping("/api/courses/{cid}")
   public Course findCourseById(
       @PathVariable("cid") int cid) {
-    for (Course c : courses) {
-      if (c.getId() == cid) {
-        return c;
-      }
+    Optional<Course> c = repository.findById(cid);
+    if (c.isPresent()) {
+      return c.get();
     }
     return null;
   }
