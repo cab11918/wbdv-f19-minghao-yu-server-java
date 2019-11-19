@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WidgetController {
   @Autowired
-  WidgetRepository repository;
+  WidgetRepository widgetRepository;
 
 
   WidgetService service = new WidgetService();
@@ -32,7 +32,7 @@ public class WidgetController {
   @PostMapping("/api/widgets")
   public Widget createWidget(
       @RequestBody Widget widget) {
-    return repository.save(widget);
+    return widgetRepository.save(widget);
   }
 
   @PutMapping("/api/widgets/{widgetId}")
@@ -40,29 +40,29 @@ public class WidgetController {
       @PathVariable("widgetId") int widgetId,
       @RequestBody Widget newWidget
   ) {
-   Widget w = repository.findById(widgetId).get();
+   Widget w = widgetRepository.findById(widgetId).get();
    w.set(newWidget);
-  return repository.save(w);
+  return widgetRepository.save(w);
   }
 
 
   @DeleteMapping("/api/widgets/{widgetId}")
   public void deleteWidget(
       @PathVariable("widgetId") int id) {
-    repository.deleteById(id);
+    widgetRepository.deleteById(id);
 
   }
 
   @GetMapping("/api/widgets")
   public List<Widget> findAllWidgets() {
-    return (List<Widget>)repository.findAll();
+    return (List<Widget>)widgetRepository.findAll();
 //    return widgets;
   }
 
   @GetMapping("/api/widgets/{widgetId}")
   public Widget findWidgetById(
       @PathVariable("widgetId") int id) {
-  Optional<Widget> w = repository.findById(id);
+  Optional<Widget> w = widgetRepository.findById(id);
   if(w.isPresent()) {
     return w.get();
   }
@@ -72,6 +72,19 @@ public class WidgetController {
 //      }
 //    }
     return null;
+  }
+
+
+  @GetMapping("/api/topics/{tid}/widgets")
+  public List<Widget> findWidgetsForTopic(
+      @PathVariable("tid") int id) {
+    List<Widget> w = widgetRepository.findWidgetsForTopic(id);
+    return w;
+//    for (Widget w : widgets) {
+//      if (w.getId() == id) {
+//        return w;
+//      }
+//    }
   }
 
 
