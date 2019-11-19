@@ -6,8 +6,9 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name="modules")
+@Table(name = "modules")
 public class Module {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
