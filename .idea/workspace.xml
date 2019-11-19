@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5834a896-c686-446a-98f7-04de8054af32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Module.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="236">
+              <caret line="22" selection-start-line="22" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,13 +54,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1543#1544#0" expanded="true" />
                 <element signature="e#1525#1526#0" expanded="true" />
                 <element signature="e#1552#1553#0" expanded="true" />
               </folding>
@@ -70,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="420">
+              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="450">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#489#490#0" expanded="true" />
@@ -99,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -221,16 +226,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/repositories/WidgetRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/repositories/CourseRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/services/CourseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/CourseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/controllers/WidgetController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/repositories/TopicRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/repositories/LessonRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Module.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java" />
       </list>
     </option>
   </component>
@@ -499,12 +504,12 @@
       <workItem from="1573862061416" duration="4108000" />
       <workItem from="1573875726425" duration="68000" />
       <workItem from="1574181124771" duration="1093000" />
-      <workItem from="1574193473551" duration="1463000" />
+      <workItem from="1574193473551" duration="2552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207425000" />
+    <option name="totallyTimeSpent" value="208514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -522,7 +527,7 @@
       <window_info anchor="bottom" id="Spring" order="1" weight="0.29277107" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49739584" visible="true" weight="0.5192771" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49739584" visible="true" weight="0.23975904" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -671,10 +676,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -688,20 +709,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Module.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        <state relative-caret-position="420">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Lesson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Module.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="236">
+          <caret line="22" selection-start-line="22" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -710,26 +731,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Topic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="450">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
             <element signature="e#554#555#0" expanded="true" />
             <element signature="e#584#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hw01/models/Widget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
           </folding>
         </state>
       </provider>
