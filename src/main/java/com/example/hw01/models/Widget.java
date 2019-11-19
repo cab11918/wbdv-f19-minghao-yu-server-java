@@ -1,9 +1,11 @@
 package com.example.hw01.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +16,9 @@ public class Widget {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
   private String title;
+  @ManyToOne
+  @JsonIgnore
+  private Topic topic;
 
 
   public enum type {
@@ -22,13 +27,14 @@ public class Widget {
 
 
   private String widgetType;
-//  private int order;
+  //  private int order;
   private String text;
   private String src;
   private int size;
 
   public Widget() {
   }
+
   public Widget(int id, String title, int order, String text, String src,
       int size, type type) {
     this.id = id;
@@ -61,7 +67,13 @@ public class Widget {
     }
   }
 
+  public Topic getTopic() {
+    return topic;
+  }
 
+  public void setTopic(Topic topic) {
+    this.topic = topic;
+  }
 
 
   public void setWidgetType(String widgetType) {
