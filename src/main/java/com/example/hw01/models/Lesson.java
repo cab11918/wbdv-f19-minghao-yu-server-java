@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Lesson {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Integer id;
+  private int id;
   private String title;
   @ManyToOne
   @JsonIgnore
@@ -40,11 +40,11 @@ public class Lesson {
     this.module = module;
   }
 
-  public Integer getId() {
+  public int getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(int id) {
     this.id = id;
   }
 
